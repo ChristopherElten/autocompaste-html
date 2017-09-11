@@ -41,53 +41,242 @@
 
                     <form id="pre-expt-form">
                         <div class="form-group">
-                            <label for="q1">Question 1 - Text</label>
-                            <input type="text" class="form-control" id="q1" name="q1" placeholder="Enter answer">
+                            <label for="q1">What is your name?</label>
+                            <input type="text" class="form-control" id="q1" name="q1" placeholder="John">
                         </div>
                         <div class="form-group">
-                            <label for="q2">Question 2 - Radio</label>
-                            <div class="radio">
-                              <label>
-                                <input type="radio" name="q2" id="optionsRadios1" value="radio1">
-                                Radio response 1
-                              </label>
-                            </div>
-                            <div class="radio">
-                              <label>
-                                <input type="radio" name="q2" id="optionsRadios2" value="radio2">
-                                Radio response 2
-                              </label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="q3">Question 3 - Checkbox</label>
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" name="q3" value="checkbox1">
-                                Checkbox response 1
-                              </label>
-                            </div>
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" name="q3" value="checkbox2">
-                                Checkbox response 2
-                              </label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="q4">Question 4 - Select Options</label>
-                            <select class="form-control" name="q4">
-                                <option value="option1">Option response 1</option>
-                                <option value="option2">Option response 2</option>
-                                <option value="option3">Option response 3</option>
-                                <option value="option4">Option response 4</option>
-                                <option value="option1">Option response 5</option>
+                            <label for="q2">What is your age?</label>
+                            <select class="form-control" name="q2">
+                                <option value="below 18">Below 18 Years old</option>
+                                <option value="18 - 29">18 - 25 Years old</option>
+                                <option value="26 - 32">26 - 32 Years old</option>
+                                <option value="32 - 39">32 - 39 Years old</option>
+                                <option value="greater than 39">Greater than 39 Years old</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="q5">Question 5 - Textarea</label>
-                            <textarea class="form-control" id="q5" name="q5" placeholder="Enter response"></textarea>
+                            <label for="q3">To which gender identity do you most identify?</label>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q3" id="male-option" value="Male">
+                                Male
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q3" id="female-option" value="Female">
+                                Female
+                              </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="q3" id="transgender-male-option" value="Transgender-Male">
+                                    Transgender Male
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="q3" id="transgender-female-option" value="Transgender-Female">
+                                    Transgender Female
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="q3" id="gender-variant-non-conforming-option" value="Gender Variant/Non-Conforming">
+                                    Gender Variant/Non-Conforming
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="q3" id="not-listed-option" value="Not Listed">
+                                    Not Listed
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="q3" id="prefer-not-to-answer-option" value="Prefer not to answer">
+                                    Prefer not to answer
+                                </label>
+                            </div>
                         </div>
+                        <div class="form-group">
+                            <label for="q4">What is the highest degree or level of school you have completed? If currently enrolled, highest degree received.</label>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="q4" id="no-schooling-option" value="No Schooling">
+                                    No schooling completed
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="q4" id="some-secondary-schooling" value="Some secondary schooling">
+                                    Some secondary schooling (e.g. high school). Not a graduate.
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="q4" id="completed-secondary-schooling" value="Completed secondary schooling">
+                                    Secondary school graduate (e.g. high school). Diploma or the equivalent received.
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="q4" id="some-tertiary-schooling" value="Some Tertiary Schooling">
+                                    Some Tertiary schooling (e.g. post-secondary, University or Collage). Not a graduate.
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="q4" id="completed-tertiary-schooling" value="Completed Tertiary Schooling">
+                                    Tertiary school graduate (e.g. post-secondary, University or Collage). Diploma or the equivalent received.
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="q4" id="some-post-graduate-schooling" value="Some Post Graduate Schooling">
+                                    Some Post Graduate schooling (e.g. PhD). Not a graduate.
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="q4" id="completed-graduate-schooling" value="Completed Graduate Schooling">
+                                    Completed Post Graduate studies (e.g. PhD). Diploma or the equivalent received.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="q5">What is your current employment status?</label>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="q5" id="employed-full-time-option" value="Employed Full Time">
+                                    Employed full time (40 or more hours per week)
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="q5" id="employed-part-time-option" value="Employed Part Time">
+                                    Employed part time (up to 39 hours per week)
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="q5" id="unemployed-option" value="Unemployed">
+                                    Unemployed
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="q5" id="student-option" value="Student">
+                                    Student
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="q5" id="retired-option" value="Retired">
+                                    Retired
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="q6">How likely are you to use a computer when faced with a problem (at work, school or otherwise)?</label>
+                            <select class="form-control" name="q6">
+                                <option value="5">Very likely</option>
+                                <option value="4">Likely</option>
+                                <option value="3">Neutral</option>
+                                <option value="2">Unlikely</option>
+                                <option value="1">Very Unlikely</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="q7">Which of the following keyboard shortcuts do you use regularly and autonomously? Select all that apply.</label>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="q7" value="Cntrl-C (Copy)">
+                                    Cntrl-C (Copy)
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="q7" value="Cntrl-V (Paste)">
+                                    Cntrl-V (Paste)
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="q7" value="Cntrl-X (Cut)">
+                                    Cntrl-X (Cut)
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="q7" value="Cntrl-Z (Undo)">
+                                    Cntrl-Z (Undo)
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="q7" value="Cntrl-Shift-Z (Redo)">
+                                    Cntrl-Shift-Z (Redo)
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="q7" value="Cntrl-T (Open a new tab)">
+                                    Cntrl-T (Open a new tab)
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="q7" value="Cntrl-Tab (Cycle forward between tabs)">
+                                    Cntrl-Tab (Cycle forward between tabs)
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="q7" value="Cntrl-Shift-Tab (Cycle backwards between tabs)">
+                                    Cntrl-Shift-Tab (Cycle backwards between tabs)
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="q7" value="Cmd-Shift-Tab/Alt-Shift-Tab (Cycle backwards between programs)">
+                                    Cmd-Shift-Tab/Alt-Shift-Tab (Cycle backwards between programs)
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="q7" value="Shift-Arrow key (Highlight text respective of arrow key pressed)">
+                                    Shift-Arrow key (Highlight text respective of arrow key pressed)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="q8">How many hours do you estimate are spent using word-processing software (e.g. microsoft word, google docs) a day? (hours:minutes)</label>
+                            <select class="form-control" name="q8">
+                                <option value="below 00:30">below 00:30 (30 minutes)</option>
+                                <option value="00:30 - 01:00">00:30 - 01:00 (30 minutes - 1 hour)</option>
+                                <option value="01:00 - 01:30">01:00 - 01:30 (1 hour - 1 hour 30 minutes)</option>
+                                <option value="01:30 - 02:00">01:30 - 02:00 (1 hour 30 minutes - 2 hours)</option>
+                                <option value="02:00 - 02:30">02:00 - 02:30 (2 hours - 2 hours 30 minutes)</option>
+                                <option value="02:30 - 03:00">02:30 - 03:00 (2 hours 30 minutes - 3 hours)</option>
+                                <option value="03:00 - 03:30">03:00 - 03:30 (3 hours - 3 hours 30 minutes)</option>
+                                <option value="more than 03:30">more than 03:30 (3 hours 30 minutes)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="q9">Have you heard of the AutoComPaste solution for copy-paste tasks?</label>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="q9" id="yes-option" value="Yes">
+                                    Yes
+                                </label>
+                                <label>
+                                    <input type="radio" name="q9" id="no-option" value="No">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+
                         <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                     </form>
                 </div>
