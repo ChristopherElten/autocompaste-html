@@ -33,15 +33,78 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h1>Instructions</h1>
+                    <h1 class="display-1">Instructions</h1>
                     <hr>
-                    <p>Dear participant <span class="js-pid pid"></span>, please read the instructions before the experiment.
+                    <p class="lead">Dear participant <span class="js-pid pid"></span>, please read the instructions before starting the experiment.</p>
 
-                    <p>There should always be an instruction before doing the actual evaluation of the interface.<p>
-                    <p>Enter your instructions to your participant here. Diagrams and screenshots will be very helpful!</p>
+                    <p>Shown below (figure 1.0), is the experiment page which tasks the participant with copy-pasting text into a textarea using two different techniques:</p>
+                        <ul>
+                            <li>The <strong>Traditional</strong> (keyboard) technique</li>
+                            <li>The <strong>AutoComPaste</strong> technique</li>
+                        </ul>
+
+                    <img src="res/images/AutoComPaste_Experiment_Page.png" class="img-fluid" alt="AutoComPaste Experiment Page" style="max-width: 100%; height: auto;">
+                    <p><strong>Figure 1.0.</strong> Experiment page on which the participant will complete the copy-paste tasks.</p>
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="col-md-6 align-middle">
+                    <p>On the <strong>left hand side of the experiment page</strong>, the status of the experiment is shown as well as the current tasks descriptors.</p>
+                    <ul>
+                        <li>The <strong>Technique</strong> requested of the participant (either AutoComPaste or Traditional)</li>
+                        <li>The <strong>Granularity</strong> of the Text to copy (either phrase, sentence, or paragraph)</li>
+                        <li>The <strong>Position</strong> of the text in question, relative to surrounding content (either at the beginning, middle or end of text)</li>
+                        <li>The <strong>Progress</strong> of the experiment, displayed as trials completed over trials remaining</li>
+                        <li>The <strong>Text</strong> the participant is responsible to find, copy-paste, and submit</li>
+                        <li>The <strong>Next Task</strong> button which submits the participant’s response and begins the next trial</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="res/images/AutoComPaste_Experiment_Page.png" class="img-fluid" alt="AutoComPaste Experiment Page" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="col-md-6 align-middle">
+                    <p>On the <strong>right</strong>, there are several blocks of articles and data as well as a text editor.</p>
+                    <ul>
+                        <li>The <strong>Text Editor</strong> is where the participant is responsible to submit their result</li>
+                        <li>The <strong>Articles and Data Blocks</strong> contain the text the participant will be prompted to submit</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="res/images/AutoComPaste_Experiment_Page.png" class="img-fluid" alt="AutoComPaste Experiment Page" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h4>The Techniques</h4>
+                    <p>The <strong>Keyboard Technique</strong> is the use of the shortcuts Cntrl-C and Cntrl-V to copy and paste text, respectively.</p>
+                    <p>The <strong>AutoComPaste Technique</strong> is the use of autocomplete software to copy-paste text.</p>
+
+                    <h5>AutoComPaste</h5>
+
+                    <p>To use AutoComPaste</p>
+
+                    <ol>
+                        <li>Type three characters from the text you wish to copy</li>
+                        <li>A list of matching text will appear</li>
+                        <li>As you type more characters from the text in question, the matching text list will refine accordingly</li>
+                        <li>Select a text component to copy-paste using the arrow keys and the enter button</li>
+                        <li>Once a text component is selected, the right arrow key can be used to copy-paste the next text component</li>
+                        <li>The left arrow key can be used to remove any unwanted text components added after the first</li>
+                        <li>Once you are satisfied, click the Next Task button on the left hand side to continue to the next trial</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <p>The Experiment should take x minutes, including a 1 minute break at the halfway mark.</p>
 
                     <form class="form-inline">
-                        <button type="submit" class="btn btn-primary btn-lg">Next</button>
+                    <button type="submit" class="btn btn-primary btn-lg">Next</button>
                     </form>
                 </div>
             </div>
