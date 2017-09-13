@@ -1,98 +1,110 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>CS4249 Assignment 1</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body class="experiment-page">
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">Welcome</a></li>
-                        <li><a href="questionnaire-pre.html">Pre Questionnaire</a></li>
-                        <li><a href="instructions.html">Instructions</a></li>
-                        <li class="active"><a href="experiment.html">Experiment</a></li>
-                        <li><a href="questionnaire-post.html">Post Questionnaire</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3">
-                    <h1>Copy-Paste Experiment</h1>
-                    <hr>
-                    <table class="table table-bordered">
-                        <tbody>
-                            <tr>
-                                <td>Technique</td>
-                                <td><span class="js-expt-technique">ACP</span></td>
-                            </tr>
-                            <tr>
-                                <td>Granularity</td>
-                                <td><span class="js-expt-granularity">Phrase</span></td>
-                            </tr>
-                            <tr>
-                                <td>Independent Variable 3</td>
-                                <td>???</td>
-                            </tr>
-                            <tr>
-                                <td>Trial</td>
-                                <td><span class="js-expt-current-trial"></span> / <span class="js-expt-num-trials"></span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p>Please copy-paste the following <span class="js-expt-granularity">phrase</span> using the <span class="js-expt-technique">AUTOCOMPASTE</span> technique from one of the open windows.</p>
-                    <div id="stimuli" class="alert alert-danger js-expt-stimuli">This is a long stimuli!</div>
-                    <button class="btn btn-primary btn-lg" onclick="next()">Next Task</button>
-                </div>
-                <div id="autocompaste" class="col-sm-9">
-                    <div id="autocompaste-display"></div>
-                </div>
-            </div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CS4249 Assignment 1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body class="experiment-page">
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Welcome</a></li>
+                <li><a href="questionnaire-pre.html">Pre Questionnaire</a></li>
+                <li><a href="instructions.html">Instructions</a></li>
+                <li class="active"><a href="experiment.html">Experiment</a></li>
+                <li><a href="questionnaire-post.html">Post Questionnaire</a></li>
+            </ul>
         </div>
+    </div>
+</nav>
 
-        <script src="js/vendor/jquery-1.11.2.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/WindowManager.js"></script>
-        <script src="js/autocompaste/engine.js"></script>
-        <script src="js/autocompaste/interface.js"></script>
-        <script src="js/autocompaste/editor.js"></script>
-        <script src="js/autocompaste/autocompaste.js"></script>
-        <script src="js/DataStorage.js"></script>
-        <script src="js/ACPToolKit.js"></script>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <h1>Copy-Paste Experiment</h1>
+            <hr>
+            <table class="table table-bordered">
+                <tbody>
+                <tr>
+                    <td>Technique</td>
+                    <td><span class="js-expt-technique">ACP</span></td>
+                </tr>
+                <tr>
+                    <td>Granularity</td>
+                    <td><span class="js-expt-granularity">Phrase</span></td>
+                </tr>
+                <tr>
+                    <td>Scenario</td>
+                    <td><span class="js-expt-scenario">Scenario</span></td>
+                </tr>
+                <tr>
+                    <td>Trial</td>
+                    <td><span class="js-expt-current-trial"></span> / <span class="js-expt-num-trials"></span></td>
+                </tr>
+                </tbody>
+            </table>
+            <p>Please copy-paste the following <span class="js-expt-granularity">phrase</span> using the <span class="js-expt-technique">AUTOCOMPASTE</span> technique from one of the open windows.</p>
+            <div id="stimuli" class="alert alert-danger js-expt-stimuli">This is a long stimuli!</div>
+            <button class="btn btn-primary btn-lg" onclick="next()">Next Task</button>
+        </div>
+        <div id="autocompaste" class="col-sm-9">
+            <div id="autocompaste-display"></div>
+        </div>
+    </div>
+</div>
 
-        <script>
+<script src="js/vendor/jquery-1.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script src="js/WindowManager.js"></script>
+<script src="js/autocompaste/engine.js"></script>
+<script src="js/autocompaste/interface.js"></script>
+<script src="js/autocompaste/editor.js"></script>
+<script src="js/autocompaste/autocompaste.js"></script>
+<script src="js/DataStorage.js"></script>
+<script src="js/ACPToolKit.js"></script>
 
-            var trialsData;
+<script>
+
+            var trialsData = [];
             var currentTrial;
             var totalNumberOfTrials;
-            var headers = ['Participant id', 'Technique', 'Granularity',
+            var headers = ['Participant id', 'Technique', 'Granularity', 'Scenario',
                             'Trial no', 'Stimuli', 'User Response', 'Trial Start Time',
                             'Trial End Time', 'Trial Time', 'Accuracy'];
             var trialData = [];
             var pid;
+            var wasBreak = false;
+            var participant;
+            var stimuliTrials;
 
             function next () {
+                if  (wasBreak) {
+                    ACPToolKit.presentTrial(createOptionsObjectForTrial(trialsData[currentTrial]));
+                    currentTrial += 1;
+                    $('.js-expt-current-trial').text(currentTrial);
+                    wasBreak = false;
+                    return 0;
+                }
+
                 if (currentTrial !== 0) {
                     var trialResult = ACPToolKit.getCurrentTrialState();
 
                     var technique = trialResult.technique;
                     var granularity = trialResult.granularity;
+                    var scenario = trialResult.scenario;
                     var trialNum = currentTrial;
                     var stimuli = trialResult.stimuli;
                     var userResponse = trialResult.user_response;
@@ -101,14 +113,18 @@
                     var trialDuration = trialResult.duration;
                     var accuracy = stimuli === userResponse ? 1 : 0;
 
-                    var row = [pid, technique, granularity, trialNum,
+                    var row = [pid, technique, granularity, scenario, trialNum,
                                 stimuli, userResponse, trialStartTime,
                                 trialEndTime, trialDuration, accuracy];
                     trialData.push(row);
                 }
 
-                if (currentTrial < totalNumberOfTrials) {
-                    ACPToolKit.presentTrial(trialsData[currentTrial]);
+                // Give the user a break every quarter
+                if (currentTrial != 0 && currentTrial != totalNumberOfTrials && currentTrial%(Math.floor(totalNumberOfTrials/4)) == 0) {
+                    alert('Take a 30 second break. When you are ready to resume, press Next Task');
+                    wasBreak = true;
+                } else if (currentTrial < totalNumberOfTrials) {
+                    ACPToolKit.presentTrial(createOptionsObjectForTrial(trialsData[currentTrial]));
                     currentTrial += 1;
                     $('.js-expt-current-trial').text(currentTrial);
                 } else {
@@ -118,17 +134,124 @@
                 }
             }
 
+            // Create Options Object from trialData array entry previously generated based on Participant ID
+            function createOptionsObjectForTrial(trialData) {
+                var options = new Object();
+
+                options.data_file = trialData[0];
+                options.technique = trialData[1];
+                options.granularity = trialData[2];
+                options.scenario = trialData[3];
+                options.stimuli = trialData[4];
+
+                return options;
+            }
+
+            // Implementing Fisher–Yates shuffle
+            function shuffleArray(ar)
+            {
+                for (var i = ar.length - 1; i > 0; i--)
+                {
+                    // between 0 and array length
+                    var index = Math.floor(Math.random() * ar.length);
+
+                    var a = ar[index];
+                    ar[index] = ar[i];
+                    ar[i] = a;
+                }
+                return ar;
+            }
+
             $(document).ready(function () {
-                $.get('data/experiments.json', function (data) {
-                    trialsData = data.experiments;
+
+                var stimuliDataPromise = $.getJSON('data/stimuli.json');
+                var participantsDataPromise = $.getJSON('data/participants.json');
+
+                $.when(stimuliDataPromise, participantsDataPromise).then(function(stimuliData, participantsData) {
+
+                    var data_file, granularity, scenario, stimuli, technique, trialData;
+                    var trialOrder = [1, 2, 3], randomTrialOrder;
+                    pid = ACPToolKit.getCurrentParticipantId();
+                    // Match user to pid entered
+                    participant = participantsData[0].participants.filter(function(participant){ return participant.id == pid})[0];
+
+                    // Getting stimuli trial information
+                    stimuliTrials = stimuliData[0];
+
+                    // Three blocks
+                    for (var block = 0; block < 3; block++) {
+                        // Constructing Trials Data based off participant in question
+                        participant.technique.forEach(function(participant_technique) {
+                            participant.granularity.forEach(function(participant_granularity) {
+                                participant.scenario.forEach(function(participant_scenario) {
+
+                                    //Randomize the order of trials the participant will encounter
+                                    randomTrialOrder = shuffleArray(trialOrder);
+
+                                    // Create the three trials for each condition
+                                    for (var i = 0; i < 3; i++) {
+                                        // Choose one of three trial ids (0, 1, 2)
+                                        // Ensured the same order is not triggered twice
+                                        var trialId = randomTrialOrder[i] - 1;
+
+                                        technique = participant_technique;
+                                        granularity = participant_granularity;
+                                        scenario = participant_scenario;
+
+                                        // Generate the correct stimuli based on the participant scenario
+                                        // stimuli = stimuliTrials.scenario.granularity[0];
+                                        if (scenario == "Single-Task") {
+                                            switch (granularity) {
+                                                case "Phrase":
+                                                    stimuli = stimuliTrials.trials[0]["single-task"]["phrase"][trialId];
+                                                    break;
+
+                                                case "Sentence":
+                                                    stimuli = stimuliTrials.trials[0]["single-task"]["sentence"][trialId];
+                                                    break;
+
+                                                case "Paragraph":
+                                                    stimuli = stimuliTrials.trials[0]["single-task"]["paragraph"][trialId];
+                                                    break;
+                                            }
+                                        } else if (scenario == "Multi-Task") {
+                                            switch (granularity) {
+                                                case "Phrase":
+                                                    stimuli = stimuliTrials.trials[0]["multi-task"]["phrase"][trialId];
+                                                    break;
+
+                                                case "Sentence":
+                                                    stimuli = stimuliTrials.trials[0]["multi-task"]["sentence"][trialId];
+                                                    break;
+
+                                                case "Paragraph":
+                                                    stimuli = stimuliTrials.trials[0]["multi-task"]["paragraph"][trialId];
+                                                    break;
+                                            }
+                                        }
+
+                                        data_file = "data/texts.json";
+
+                                        trialData = [data_file, technique, granularity, scenario, stimuli];
+                                        trialsData.push(trialData);
+                                    }
+                                })
+                            })
+                        })
+                    };
+
                     currentTrial = 0;
                     totalNumberOfTrials = trialsData.length;
                     $('.js-expt-num-trials').text(totalNumberOfTrials);
+                    trialData = [];
                     trialData.push(headers);
                     next();
-                    pid = ACPToolKit.getCurrentParticipantId();
+                })
+
+                $.get('data/participants.json', function (data) {
+
                 })
             });
         </script>
-    </body>
+</body>
 </html>

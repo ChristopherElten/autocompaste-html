@@ -1,0 +1,39 @@
+
+{
+  "trials": [{
+    "single-task": {
+      "phrase": [
+        "the most frequent word",
+        "The \"P\" material of a diode",
+        "In languages that employ articles"
+      ],
+      "sentence": [
+        "The number of positive charges or protons in the nucleus of an atom.",
+        "A tuned circuit designed to pass a band of frequencies between a lower cut-off frequency (f1) and a higher cut-off frequency (f2). Frequencies above and below the pass band are heavily attenuated.",
+        "Information represented as continuously varying voltage or current rather than in discrete levels as opposed to digital data varying between two discrete levels."
+      ],
+      "paragraph": [
+        "Traditionally in English, an article is usually considered to be a type of adjective. In some languages, articles are a special part of speech, which cannot easily be combined with other parts of speech. It is also possible for articles to be part of another part of speech category such as a determiner, an English part of speech category that combines articles and demonstratives (such as 'this' and 'that').",
+        "In languages that employ articles, every common noun, with some exceptions, is expressed with a certain definiteness, just as many languages express every noun with a certain grammatical number. Every noun must be accompanied by the article, if any, corresponding to its definiteness, and the lack of an article (considered a zero article) itself specifies a certain definiteness.",
+        "This is in contrast to other adjectives and determiners, which are typically optional. This obligatory nature of articles makes them among the most common words in many languages - in English, for example, the most frequent word is the."
+      ]
+    },
+    "multi-task": {
+      "phrase": [
+        "A three terminal device\n\nA single winding transformer",
+        "Width of the band of frequencies\n\nexpressed with a certain definiteness",
+        "The rotating or moving component\n\nAviation electronics"
+      ],
+      "sentence": [
+        "A DC voltage source containing two or more cells that convert chemical energy to electrical energy.\n\nWhat is autotransformer?",
+        "To reduce the amplitude of an action or signal. The opposite of amplification.\n\nName for an AC generator.",
+        "Traditionally in English, an article is usually considered to be a type of adjective.\n\nA number system having only two symbols, 0 and 1. A base 2 number system."
+      ],
+      "paragraph": [
+        "In languages that employ articles, every common noun, with some exceptions, is expressed with a certain definiteness, just as many languages express every noun with a certain grammatical number. Every noun must be accompanied by the article, if any, corresponding to its definiteness, and the lack of an article (considered a zero article) itself specifies a certain definiteness. This is in contrast to other adjectives and determiners, which are typically optional.\n\nTraditionally in English, an article is usually considered to be a type of adjective. In some languages, articles are a special part of speech, which cannot easily be combined with other parts of speech. It is also possible for articles to be part of another part of speech category such as a determiner, an English part of speech category that combines articles and demonstratives (such as 'this' and 'that').",
+        "In some languages, articles are a special part of speech, which cannot easily be combined with other parts of speech. It is also possible for articles to be part of another part of speech category such as a determiner, an English part of speech category that combines articles and demonstratives (such as 'this' and 'that').\n\nIn languages that employ articles, every common noun, with some exceptions, is expressed with a certain definiteness, just as many languages express every noun with a certain grammatical number. Every noun must be accompanied by the article, if any, corresponding to its definiteness, and the lack of an article (considered a zero article) itself specifies a certain definiteness. This is in contrast to other adjectives and determiners, which are typically optional.",
+        "Traditionally in English, an article is usually considered to be a type of adjective. In some languages, articles are a special part of speech, which cannot easily be combined with other parts of speech. It is also possible for articles to be part of another part of speech category such as a determiner, an English part of speech category that combines articles and demonstratives (such as 'this' and 'that').\n\nIn some languages, articles are a special part of speech, which cannot easily be combined with other parts of speech. It is also possible for articles to be part of another part of speech category such as a determiner, an English part of speech category that combines articles and demonstratives (such as 'this' and 'that')."
+      ]
+    }
+  }]
+}

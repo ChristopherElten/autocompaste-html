@@ -1,14 +1,74 @@
 {
   "participants": [{
     "id" : "P01",
-    "technique": ["T", "ACP"],
-    "granularity": ["ph", "se", "pa"],
-    "scenario" : ["single", "multi"]
+    "technique": ["Traditional", "AutoComPaste"],
+    "granularity": ["Phrase", "Sentence", "Paragraph"],
+    "scenario" : ["Single-Task", "Multi-Task"]
   },
   {
     "id" : "P02",
-    "technique": ["T", "ACP"],
-    "granularity": ["ph", "se", "pa"],
-    "scenario" : ["multi", "single"]
+    "technique": ["Traditional", "AutoComPaste"],
+    "granularity": ["Phrase", "Sentence", "Paragraph"],
+    "scenario" : ["Multi-Task", "Single-Task"]
+  },
+  {
+    "id" : "P03",
+    "technique": ["Traditional", "AutoComPaste"],
+    "granularity": ["Sentence", "Paragraph", "Phrase"],
+    "scenario" : ["Single-Task", "Multi-Task"]
+  },
+  {
+    "id" : "P04",
+    "technique": ["Traditional", "AutoComPaste"],
+    "granularity": ["Sentence", "Paragraph", "Phrase"],
+    "scenario" : ["Multi-Task", "Single-Task"]
+  },
+  {
+    "id" : "P05",
+    "technique": ["Traditional", "AutoComPaste"],
+    "granularity": ["Paragraph", "Phrase", "Sentence"],
+    "scenario" : ["Single-Task", "Multi-Task"]
+  },
+  {
+    "id" : "P06",
+    "technique": ["Traditional", "AutoComPaste"],
+    "granularity": ["Paragraph", "Phrase", "Sentence"],
+    "scenario" : ["Multi-Task", "Single-Task"]
+  },
+  {
+    "id" : "P07",
+    "technique": ["AutoComPaste", "Traditional"],
+    "granularity": ["Phrase", "Sentence", "Paragraph"],
+    "scenario" : ["Single-Task", "Multi-Task"]
+  },
+  {
+    "id" : "P08",
+    "technique": ["AutoComPaste", "Traditional"],
+    "granularity": ["Phrase", "Sentence", "Paragraph"],
+    "scenario" : ["Multi-Task", "Single-Task"]
+  },
+  {
+    "id" : "P09",
+    "technique": ["AutoComPaste", "Traditional"],
+    "granularity": ["Sentence", "Paragraph", "Phrase"],
+    "scenario" : ["Single-Task", "Multi-Task"]
+  },
+  {
+    "id" : "P10",
+    "technique": ["AutoComPaste", "Traditional"],
+    "granularity": ["Sentence", "Paragraph", "Phrase"],
+    "scenario" : ["Multi-Task", "Single-Task"]
+  },
+  {
+    "id" : "P11",
+    "technique": ["AutoComPaste", "Traditional"],
+    "granularity": ["Paragraph", "Phrase", "Sentence"],
+    "scenario" : ["Single-Task", "Multi-Task"]
+  },
+  {
+    "id" : "P12",
+    "technique": ["AutoComPaste", "Traditional"],
+    "granularity": ["Paragraph", "Phrase", "Sentence"],
+    "scenario" : ["Multi-Task", "Single-Task"]
   }]
 }

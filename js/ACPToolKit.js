@@ -70,7 +70,7 @@ var ACPToolKit = (function () {
         }
     });
 
-    if (window.location.pathname.indexOf('experiment') > -1) {
+    if ((window.location.pathname.indexOf('experiment-test') > -1) || (window.location.pathname.indexOf('experiment') > -1) ) {
         var wm = new WindowManager('autocompaste-display');
         var currentTrialOptions = null;
         var startTime = null;
@@ -84,6 +84,7 @@ var ACPToolKit = (function () {
 
             $('.js-expt-technique').text(options.technique);
             $('.js-expt-granularity').text(options.granularity);
+            $('.js-expt-scenario').text(options.scenario);
             $('.js-expt-stimuli').text(options.stimuli);
 
             // Clean up DOM
@@ -103,7 +104,6 @@ var ACPToolKit = (function () {
                     var engine = new AutoComPaste.Engine();
                     break;
             }
-
             var iface = new AutoComPaste.Interface(wm, engine, data_file);
 
             // Highlight the relevant text.
